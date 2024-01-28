@@ -1,0 +1,262 @@
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mode-banner {
+    position: absolute;
+    top: 200px;
+    left: 26%;
+    z-index: 200;
+    background-color: rgb(237, 245, 245);
+    height: 200px;
+    width: 340px;
+    border-radius: 30px;
+    box-shadow: 8px 6px 140px 9px rgba(0, 0, 0, 1);
+    border-color: rgba(22, 141, 95, 0.918);
+
+}
+
+.spin-bowl {
+    position: absolute;
+    top: 200px;
+    right: 13%;
+    height: 220px;
+    border-radius: 50%;
+    animation: rotateImage 5s linear infinite;
+}
+
+@keyframes rotateImage {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+    
+}
+
+.background-image-1 {
+    position: relative;
+    height: 600px; 
+    width: 100%; 
+}
+
+.banner-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-button {
+    margin-left: 6px;
+    height:40px;
+    width: 80px;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    border-style: none;
+    background-color: rebeccapurple;
+    flex: 1;
+}
+
+.banner-btn-3 {
+    margin-right: 6px;
+}
+
+.banner-text {
+    font-family: fantasy;
+    font-size: 500;
+}
+
+.food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 2000px;
+    flex-direction: row;
+    background-color: bisque;
+    z-index: 400;
+    
+}
+
+.food-item {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    margin-top: 20px; 
+    margin-left: 10px;
+    height: 25px; 
+    background-color: rgba(145, 212, 145, 0.452);  
+    border-radius: 6px;
+}
+
+.recipe-item {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    max-width: 290px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.recipe-img {
+    height: 120px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.get-recipe {
+    height: 40px;
+    width: 100%;
+    margin-top: 13px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(38, 143, 64);
+    color: white;
+}
+
+
+/*!-----------for small screens Android---------!  */
+
+@media (max-width: 767px) {
+    
+    .mode-banner {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 132px;
+        left: 23%;
+        z-index: 200;
+        background-color: rgba(208, 214, 206, 0.76);
+        height: 31%;
+        width: 38%;
+        border-style:groove;
+        border-color: rgba(91, 155, 155, 0.5);
+        border-radius: 20px;
+        box-shadow: 8px 6px 90px 9px rgb(56, 82, 62);
+        border-width: .2px;
+    }
+
+    .mode-banner-title {
+        font-size: 80%; 
+    }
+    
+    .spin-bowl {
+        position: absolute;
+        top: 130px;
+        right: 6%;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: 8px 6px 90px 9px rgba(0, 0, 0, 1);
+        animation: rotateImage 5s linear infinite;
+    }
+    
+    @keyframes rotateImage {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+        
+    }
+    
+    .background-image-1 {
+        position: relative;
+        height: 325px; 
+        width: 100%; 
+    }
+    
+    .banner-btns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .banner-button {
+        font-size: 9px;
+        margin-left: 6px;
+        height:20px;
+        width: 80px;
+        color: rgb(255, 255, 255);
+        border-radius: 7px;
+        border-style: none;
+        background-color: rgb(157, 113, 201);
+        flex: 1;
+    }
+    
+    .banner-btn-3 {
+        margin-right: 6px;
+    }
+    
+    .banner-text {
+        margin-top: -9px;
+        padding-left: 5px;
+.       font-size : 5%;
+    }
+    
+    .food-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+        flex-direction: row;
+        background-color: #1d122b;
+        z-index: 400;
+        
+    }
+    
+    .food-item {
+        padding-top: 6px;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center;
+        margin-top: 20px; 
+        margin-left: 10px;
+        height: 25px; 
+        background-color: rgba(236, 234, 234, 0.986); 
+        color: rgb(80, 23, 23); 
+        font-weight: 600;
+        border-radius: 11px;
+    }
+    
+    .recipe-item {
+        display: flex;
+        flex-direction: column;
+        max-height: 200px;
+        max-width: 300px;
+        margin-top: 11px;
+        margin-left: 30px;
+        border-radius: 20px;
+    }
+    
+    .recipe-img {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .get-recipe {
+        height: 30px;
+        width: 100%;
+        margin-top: 1px;
+        border-style: none;
+        background-color: rgb(38, 143, 64);
+        color: white;
+    
+    }
+
+    .nav-icon {
+        margin-top: 6px;
+        height: 20px;
+        padding-left: 35px;
+        z-index: 999;
+    }
+
+    .navigation {
+        position: fixed;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        padding-bottom: 12px;
+        padding-left: 7px;
+        margin-left: 20px; 
+        margin-top: 15px;
+        border-radius: 20px;
+        background-color: rgba(58, 167, 85, 0.911);
+        box-shadow: 4px 4px 10px 2px #784bb354;
+        z-index: 999;
+        width: 90%;
+        bottom: 9px;
+    }
+}
+

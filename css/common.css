@@ -1,0 +1,29 @@
+p {
+    font-family:  Arial;
+    font-size: large;
+}
+
+@media (max-width : 767px) {
+    h1 {
+        font-size: 18px;
+    }
+    p {
+       font-family:  Arial;
+       font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+        background-color: rgb(168, 177, 174); 
+        padding-bottom: 1500px;
+        margin: 0;
+    }
+}
+
+body {
+    width: 100%;
+    background-color: #1d122b; 
+    padding-bottom: 12px;
+    margin: 0;
+    padding-bottom: 60px;
+}
